@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, h2, p, ul, li, a, input, textarea, button {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #112240;
+  }
+  
+  .header .logo {
+    color: #64ffda;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    color: #ccd6f6;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #64ffda;
+  }
+  
+  /* Navigation for Contact Section */
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #0d0d0d;
+    padding: 1rem 0;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  /* Hero Section */
+  .hero, .about-me {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .hero .content, .about-me .about-content {
+    max-width: 50%;
+  }
+  
+  .hero .content h1 {
+    font-size: 2.5rem;
+    color: #64ffda;
+  }
+  
+  .hero .content h2, .about-me h3 {
+    font-size: 1.8rem;
+    color: #ccd6f6;
+  }
+  
+  .hero .content .dynamic-text, .about-me span {
+    color: #64ffda;
+  }
+  
+  .hero .content p, .about-me p {
+    margin: 15px 0;
+  }
+  
+  .profile-picture img {
+    border: 5px solid #64ffda;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .about-me .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #64ffda;
+    border: 2px solid #64ffda;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .about-me .btn:hover {
+    background: #64ffda;
+    color: #0a192f;
+  }
+  
+  /* Contact Section */
+  section#contact {
+    padding: 2rem;
+    text-align: center;
+    background: #18202c;
+  }
+  
+  section#contact h2 span {
+    color: #00f0ff;
+  }
+  
+  .contact-info {
+    margin: 1rem 0;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    color: #00f0ff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  form {
+    margin-top: 1rem;
+  }
+  
+  form input, form textarea, form button {
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input, form textarea {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  form button {
+    background: #00f0ff;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0d0d0d;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  /* Utility Classes */
+  .social-icons a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero, .about-me {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-picture img {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .hero .content, .about-me .about-content {
+      max-width: 100%;
+    }
+  
+    form input, form textarea, form button {
+      width: 100%;
+    }
+  }
